@@ -10,16 +10,14 @@ import {RecoveryPassword} from "../../n2-features/f1-auth/a3-assword/RecoveryPas
 export const App = () => {
     return (
         <div className="App">
-            <>
                 <Routes>
-                    <Route path={"/"} element={<Main/>}/>
-                    <Route path={"/test"} element={<Test/>}/>
-                    <Route path={"/new-password"} element={<AddNewPassword/>}/>
-                    <Route path={"/recovery-password"} element={<RecoveryPassword/>}/>
-                    <Route path={"/404"} element={<NotFoundPage/>}/>
-                    <Route path={"/*"} element={<Navigate to={"/404"}/>}/>
+                    <Route path={"friday/"} element={<Main/>}/>
+                    <Route path={"friday/test"} element={<Test/>}/>
+                    <Route path={"friday/new-password"} element={<AddNewPassword/>}/>
+                    <Route path={"friday/recovery-password"} element={<RecoveryPassword/>}/>
+                    <Route path={"friday/404"} element={<NotFoundPage/>}/>
+                    <Route path={"/*"} element={<Navigate to={"friday/404"}/>}/>
                 </Routes>
-            </>
         </div>
     );
 }
